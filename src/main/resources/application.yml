@@ -1,0 +1,29 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: admin
+server:
+  port : 8080
+  servlet:
+    context-path: /api
+services:
+  base-price:
+    url: https://60f1c26f38ecdf0017b0fdba.mockapi.io/travel
+    read-timeout: 20s
+    connection-timou: 5s
+    username: base-price
+    password: base-price
+  tax-rate:
+    url: https://60f1c26f38ecdf0017b0fdba.mockapi.io/travel
+    read-timeout: 20s
+    connection-timou: 5s
+    username: tax-rate
+    password: tax-rate
+info:
+  app:
+    name: Travel Service Rest API
+    description: Small Rest API service to return travel ticket prices
+    version: 0.0.1-SNAPSHOT
+
